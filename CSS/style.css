@@ -202,7 +202,9 @@ padding: 1rem;
 { grid-area: 3 / 1 / 4 / 4;
 padding: 1rem;
 }
-
+.navbar-collapse{ 
+   justify-content: end;
+}
 
    @media only screen and (min-width: 768px){
       ul,.index-header-flex{ 
