@@ -99,7 +99,7 @@ display: flex;
 }
 
 .img-gri {
-  flex: 1 1 50%;
+  flex: 1 1 50%;       
   min-width: 250px;    
   max-width: 400px;    
 }
@@ -243,24 +243,6 @@ grid-row-gap: 0.2rem;
 
 margin: 1rem auto;
 
-}
-footer h5 {
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-footer p,
-footer li {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-footer hr {
-  border-color: rgba(255,255,255,0.2);
-}
-
-footer .small {
-  color: rgba(255,255,255,0.6);
 }
 
 .footer-container-primerHijo,
