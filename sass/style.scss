@@ -1,7 +1,14 @@
+@import 'variables'; 
+@import 'extends';
 
+@import 'header';
+@import 'main';
+@import 'footer';
+
+@import 'mq';
 
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: $fuente;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,7 +41,8 @@ z-index: 999;
 
 /* Estilos header */
 .logotipo{
-    width: 5rem;
+    width: $ancho-logo;
+    height: $ancho-logo;
  }
 .index-header, .sobrenosotros-header { 
   background-image: url(../img/casa7.jpg);
@@ -111,7 +119,7 @@ margin-left: 1rem;
   height: auto;
   max-width: 100%; 
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px $sombra-suave;
 }
 .texto-gri {
   flex: 1 1 50%;     
@@ -135,19 +143,19 @@ margin-left: 1rem;
 .card-herreria, .card-remodelaciones{ 
     width: 100%;
   max-width: 25rem; 
-  background-color: rgba(134, 116, 116, 0.24);
+  background-color: $gris-suave;
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px $sombra-suave;
 }
 
 .card-herreria:hover, .card-remodelaciones:hover{ 
    transform: scale(1.02);
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 8px 16px $sombra-fuerte;
 }
 .card-herreria img, .card-remodelaciones-img{
   width: 100%;
@@ -162,7 +170,7 @@ margin-left: 1rem;
  }
  .card-btn{ 
     width: 100%;
-    background-color: rgb(221, 161, 98);
+    background-color: $color-marca;
     border: none;
     padding: 0.5rem;
     color: $color-principal;
@@ -192,7 +200,7 @@ margin-left: 2rem;
   background-color:$color-principal; 
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px $sombra-suave;
   max-width: 500px;
   margin: 2rem auto;
 }
