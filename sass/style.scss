@@ -14,9 +14,8 @@
     box-sizing: border-box;
 }
 ul{ 
+   @extend %flex-centro;
     list-style: none;
-    display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 2rem;
     color:$color-secundario;
@@ -61,8 +60,7 @@ margin-left: 1rem;
 }
 
 .index-header-flex{
-  @extend %flexBasico; 
-  justify-content: space-between;
+  @extend %flex-space; 
   padding: 10px;
 }
 
@@ -78,14 +76,11 @@ margin-left: 1rem;
     color: $color-principal;
   }
   .btn-header{
-    width: 100%;
+    @extend %boton-principal;
     max-width: 400px;
     background-color: $color-principal;
-    border: none;
-    font-weight: 600;
     padding: 15px;
     margin-top: 2rem;
-    cursor: pointer;
    }
    .servicios-header-container, .remodelaciones-header-container{
       max-width: 70rem;
@@ -118,8 +113,7 @@ margin-left: 1rem;
   width: 100%; 
   height: auto;
   max-width: 100%; 
-  border-radius: 1rem;
-  box-shadow: 0 0 10px $sombra-suave;
+  @extend %img-sombra;
 }
 .texto-gri {
   flex: 1 1 50%;     
@@ -141,16 +135,12 @@ margin-left: 1rem;
     margin-bottom: 1rem;
  }
 .card-herreria, .card-remodelaciones{ 
-    width: 100%;
+  @extend %tarjeta;
+  width: 100%;
   max-width: 25rem; 
-  background-color: $gris-suave;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  box-shadow: 0 4px 8px $sombra-suave;
 }
 
 .card-herreria:hover, .card-remodelaciones:hover{ 
