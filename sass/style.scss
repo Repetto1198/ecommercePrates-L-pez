@@ -5,7 +5,6 @@
 @import "./layout/footer";
 @import "./layout/main";
 
-
 @import "./mq/mq";
 
 * {
@@ -245,30 +244,27 @@ margin: 1rem auto;
 
 }
 
-.footer-container-primerHijo,
-.footer-container-segundoHijo,
-.footer-container-tercerHijo {
-  background-color: rgba(128, 125, 125, 0.685);
-}
-
 .footer-container-primerHijo h4, .footer-container-primerHijo p,
 .footer-container-segundoHijo h4, .footer-container-segundoHijo p,
 .footer-container-tercerHijo h4, .footer-container-tercerHijo p { 
 color:$color-principal;
 }
 
-.footer-container-primerHijo 
-{ grid-area: 1 / 1 / 3 / 3;
+.footer-container-primerHijo {
+  background-color: rgba(128, 125, 125, 0.685);
+  grid-area: 1 / 1 / 3 / 3;
 padding: 1rem;
 }
 
-.footer-container-segundoHijo
- { grid-area: 1 / 3 / 3 / 4;
+.footer-container-segundoHijo{
+  background-color: rgba(128, 125, 125, 0.685);
+  grid-area: 1 / 3 / 3 / 4;
 padding: 1rem;
 }
 
-.footer-container-tercerHijo 
-{ grid-area: 3 / 1 / 4 / 4;
+.footer-container-tercerHijo {
+  background-color: rgba(128, 125, 125, 0.685);
+   grid-area: 3 / 1 / 4 / 4;
 padding: 1rem;
 }
 .navbar-collapse{ 
