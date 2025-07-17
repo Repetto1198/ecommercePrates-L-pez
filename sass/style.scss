@@ -1,17 +1,17 @@
-@import 'variables'; 
-@import 'extends';
+@import "./utilities/variables";
+@import "./utilities/extends";
 
-@import 'header';
-@import 'main';
-@import 'footer';
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main";
 
-@import 'mq';
+
+@import "./mq/mq";
 
 * {
     font-family: $fuente;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 ul{ 
    @extend %flex-centro;
@@ -135,7 +135,7 @@ margin-left: 1rem;
     margin-bottom: 1rem;
  }
 .card-herreria, .card-remodelaciones{ 
-  @extend %tarjeta;
+  @extend %card;
   width: 100%;
   max-width: 25rem; 
   display: flex;

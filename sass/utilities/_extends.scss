@@ -13,7 +13,7 @@
 }
 
 // Flex horizontal con espacio entre
-%flex-space{
+%flex-space {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@
 }
 
 // Tarjeta base
-%tarjeta {
+%card {
   background-color: $gris-suave;
   padding: 1rem;
   border-radius: 0.5rem;

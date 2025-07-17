@@ -9,21 +9,17 @@
 }
 
 .card-herreria, .card-remodelaciones {
+    @extend %card;
   width: 100%;
   max-width: 25rem;
-  background-color: rgba(134, 116, 116, 0.24);
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-herreria:hover, .card-remodelaciones:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px $sombra-fuerte;
 }
 
 .card-herreria img, .card-remodelaciones-img {
@@ -40,10 +36,10 @@
 
 .card-btn {
   width: 100%;
-  background-color: rgb(221, 161, 98);
+  background-color: $color-marca;
   border: none;
   padding: 0.5rem;
-  color: #ffffff;
+  color: $color-principal;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 0.5rem;
@@ -70,17 +66,17 @@
 }
 
 .form-contacto {
-  background-color: #ffffff;
+  background-color: $color-principal;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px $sombra-suave;
   max-width: 500px;
   margin: 2rem auto;
 }
 
 .form-contacto .form-label {
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: $color-secundario;
 }
 
 .form-contacto .form-control {

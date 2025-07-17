@@ -1,6 +1,7 @@
 /* Estilos header */
+
 .logotipo {
-  width: 5rem;
+  width: $ancho-logo;
 }
 
 .index-header, .sobrenosotros-header {
@@ -19,17 +20,17 @@
 }
 
 .index-header-flex {
-  justify-content: space-between;
+    @extend %flex-space;
   padding: 10px;
 }
 
 .navegacion-superior ul li a {
-  color: #ffffff;
+  color: $color-principal;
   text-decoration: none;
 }
 
 .index-parrafoHeader {
-  color: #ffffff;
+  color: $color-principal;
   align-items: center;
 }
 
@@ -40,7 +41,7 @@
 .btn-header {
   width: 100%;
   max-width: 400px;
-  background-color: #ffffff;
+  background-color: $color-principal;
   border: none;
   font-weight: 600;
   padding: 15px;
@@ -89,9 +90,17 @@
   min-width: 250px;
 }
 
-.texto-gri h2 {
+.texto-gri {
+  flex: 1 1 50%;
+  min-width: 250px;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: rgb(0, 0, 0);
+  color: $color-secundario;
+}
+.h2{ 
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: $color-secundario;
 }
