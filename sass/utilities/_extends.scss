@@ -41,3 +41,8 @@
   box-shadow: 0 4px 8px $sombra-suave;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+%gridestilosBasicos{ 
+  background-color: rgba(128, 125, 125, 0.685);
+   padding: 1rem;
+}

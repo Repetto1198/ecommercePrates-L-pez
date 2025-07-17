@@ -1,1 +1,4 @@
-@mixin gridArea 
+@mixin footerGridArea($area) {
+  grid-area: $area;
+  padding: $padding-footer;
+}
