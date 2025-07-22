@@ -97,25 +97,47 @@ crossorigin="anonymous">
         </section>
     </section>
     </section>
-     <footer class="p-3">
-    <div class="footer-container-grid">
-       <div class="footer-container-primerHijo"> 
-            <h4>Donde nos encontramos?</h4>
-            <p>Colonia 2134</p>
-       </div>
-       <div class="footer-container-segundoHijo"> 
-        <h4>Contacto</h4>
-            <p>093 875 390</p>
-       </div>
-       <div class="footer-container-tercerHijo"> 
-        <h4>Horario de atención</h4>
-            <p>Lunes a viernes
-               9:00 a. m. a 6:00 p. m.
-               Sábado
-               9:00 a. m. a 12:00 m.
-               Domingo solo con cita previa.</p> </div>
+      <!-- Asegúrate de tener FontAwesome cargado -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h5 class="text-uppercase fw-bold mb-3">
+          <i class="fas fa-map-marker-alt me-2"></i>¿Dónde nos encontramos?
+        </h5>
+        <address class="mb-0">Colonia 2134</address>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="text-uppercase fw-bold mb-3">
+          <i class="fas fa-phone me-2"></i>Contacto
+        </h5>
+        <p class="mb-0">
+          <a href="tel:093875390" class="text-white text-decoration-none">
+            093 875 390
+          </a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="text-uppercase fw-bold mb-3">
+          <i class="fas fa-clock me-2"></i>Horario de atención
+        </h5>
+        <p class="mb-0">
+          Lunes a viernes: 9:00 a. m. – 6:00 p. m.<br>
+          Sábado: 9:00 a. m. – 12:00 m.<br>
+          Domingo: solo con cita previa.
+        </p>
+      </div>
     </div>
-    <p class="footerDerechos py-3 m-0">Todos los derechos reservados</p>
-     <!--  <div class="footer-container-flex" > </div> -->
-    </footer>
-    
+
+    <hr class="border-secondary my-4" />
+
+    <div class="text-center footerDerechos">
+      <small>© 2025 Todos los derechos reservados</small>
+    </div>
+  </div>
+</footer>

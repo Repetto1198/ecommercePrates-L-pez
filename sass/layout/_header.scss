@@ -86,20 +86,14 @@
 }
 
 .texto-gri {
-  flex: 1 1 50%;
-  min-width: 250px;
+  flex: 1 1 clamp(200px, 45%, 600px);
+  min-width: 200px;
+  max-width: 500px;
+  padding: 1rem;
 }
 
-.texto-gri {
-  flex: 1 1 50%;
-  min-width: 250px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: $color-secundario;
-}
 .h2{ 
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: $color-secundario;
