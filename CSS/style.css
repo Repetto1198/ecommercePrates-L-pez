@@ -356,12 +356,11 @@ ul {
 }
 
 
-.whatsapp-button {
-    width: 60px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
+.wppLogo {
+  width: 60px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
 }
 
 /* Estilos header */
